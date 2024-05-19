@@ -8,6 +8,7 @@
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
+            fill="transparent"
           >
             <use href="/src/images/icons.svg#logo"></use>
           </svg>
@@ -22,10 +23,13 @@
           </li>
         </ul>
       </nav>
-
       <div class="form-container">
         <form class="search-form">
-          <input type="input" class="search-input" />
+          <input
+            type="input"
+            class="search-input"
+            placeholder="Search for movies"
+          />
           <button type="submit" class="search-btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -36,12 +40,13 @@
               <use href="/src/images/icons.svg#search"></use>
             </svg>
           </button>
+
+          <p class="error-msg is-hidden">
+            Movie not found. Enter the correct movie name or keyword and try
+            again.
+          </p>
         </form>
       </div>
-
-      <p class="Error-msg">
-        Movie not found. Enter the correct movie name or keyword and try again.
-      </p>
     </div>
   </header>
 </article>
