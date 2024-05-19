@@ -11,12 +11,11 @@
 }
 
 .header-container {
-  padding: 0 20px;
   font-family: Roboto;
   font-style: normal;
   line-height: normal;
   height: 230px;
-  width: 280px;
+  max-width: 280px;
   margin: 0 auto;
 }
 
@@ -24,10 +23,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 0 20px;
+  padding: 45px 0 42px;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .header-logo-txt {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
   display: none;
 }
 
@@ -70,7 +78,6 @@ a {
 
 .form-container {
   width: 100%;
-  padding: 20px 0 40px;
 }
 
 .search-form {
@@ -107,6 +114,7 @@ a {
   color: #ff001b;
   font-weight: 400;
   font-size: 14;
+  padding-top: 22px;
 }
 
 .is-hidden {
@@ -128,28 +136,57 @@ a {
   .header {
     background-image: url(../images/header-tab-1x.jpg);
   }
+
+  .header-container {
+    max-width: 620px;
+  }
+
+  .main-nav {
+    padding: 40px 0 37px;
+  }
+  .header-logo-txt {
+    display: block;
+  }
+
+  .form-container {
+    margin: 0 auto;
+  }
+  .search-form {
+    width: 336px;
+    margin: 0 auto;
+  }
+
+  .error-msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-// @media screen and (min-device-pixel-ratio: 2),
-//   (-webkit-min-device-pixel-ratio: 2),
-//   (min-resolution: 192dpi),
-//   (min-resolution: 2dppx) and (min-width: 768px) {
-//   .header {
-//     background-image: url(../images/header-tab-2x.jpg);
-//   }
-// }
+@media screen and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .header {
+    background-image: url(../images/header-tab-2x.jpg);
+  }
+}
 
-// @media screen and (min-width: 1024px) {
-//   .header {
-//     background-image: url(../images/header-desk-1x.jpg);
-//   }
-// }
+@media screen and (min-width: 1024px) {
+  .header {
+    background-image: url(../images/header-desk-1x.jpg);
+  }
 
-// @media screen and (min-device-pixel-ratio: 2),
-//   (-webkit-min-device-pixel-ratio: 2),
-//   (min-resolution: 192dpi),
-//   (min-resolution: 2dppx) and (min-width: 1024px) {
-//   .header {
-//     background-image: url(../images/header-desk-2x.jpg);
-//   }
-// }
+  .header-container {
+    max-width: 882px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) and (min-width: 1024px) {
+  .header {
+    background-image: url(../images/header-desk-2x.jpg);
+  }
+}
