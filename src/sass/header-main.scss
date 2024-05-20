@@ -30,6 +30,25 @@
   display: flex;
   gap: 10px;
   align-items: center;
+  transition: text-shadow 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  text-shadow: none;
+}
+
+.logo-svg {
+  stroke: #818181;
+  transition: stroke 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: scale(1);
+}
+.logo:hover .logo-svg,
+.logo:focus .logo-svg {
+  stroke: #ff6b08;
+  transform: scale(1.2);
+}
+
+.logo:hover,
+.logo:focus {
+  text-shadow: 0 0 10px #ff6b08;
 }
 
 .header-logo-txt {
@@ -54,6 +73,16 @@
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
+  transition: text-shadow 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  text-shadow: none;
+}
+
+.header-list-item:hover {
+  text-shadow: 0px 0px 10px white;
+}
+
+.header-list-item a {
+  cursor: default;
 }
 
 .active-nav {
@@ -89,25 +118,45 @@ a {
   border: none;
   color: white;
   font-size: 14px;
-  font-weight: 400px;
+  font-weight: 400;
   width: 100%;
   height: 20px;
   border-bottom: 0.5px solid white;
   padding-bottom: 4px;
+  transition: border 0.2s ease;
 }
 
 .search-input::placeholder {
   color: white;
 }
 
+.search-input:focus {
+  outline: none;
+  border-color: #ff6b08;
+}
+
 .search-btn {
   position: absolute;
-  right: 5;
+  right: 0;
   top: 0;
   background-color: transparent;
   border: none;
-  width: 12px;
-  height: 12px;
+  width: 22px;
+  height: 22px;
+  transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  transform: scale(1);
+}
+
+.serarch-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50, -50);
+}
+
+.search-btn:focus,
+.search-btn:hover {
+  transform: scale(1.4);
 }
 
 .error-msg {
