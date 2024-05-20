@@ -29,12 +29,20 @@
     height: 44px;
     border: 1px solid $white-text;
     border-radius: 5px;
-    background: blue;
+    background: none;
 
     margin-right: 20px;
     transition: background-color border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+.library-btns {
+    margin-top: 62px;
+    margin-right: -20px;
+
+    display: flex;
+    justify-content: center;
+}
 
 .header-container {
     padding: 0 20px;
