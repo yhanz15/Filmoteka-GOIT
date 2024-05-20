@@ -1,0 +1,57 @@
+
+.library-header {
+    background-color: rgba(0, 0, 0, 0.56);
+    background-image: url(../images/header-mob-1x.jpg);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+.library-button {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: $white-text;
+    line-height: 1.33;
+    font-weight: 500;
+
+    padding-top: 14px;
+    padding-bottom: 12px;
+    padding-left: 36px;
+    padding-right: 36px;
+
+    width: 130px;
+    height: 44px;
+    border: 1px solid $white-text;
+    border-radius: 5px;
+    background: none;
+
+    margin-right: 20px;
+    transition: background-color border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
+@media screen and (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .library-header {
+        background-image: url(../images/header-mob-2x.jpg);
+    }
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .library-header {
+        background-image: url(../images/header-tab-1x.jpg);
+    }
+}
