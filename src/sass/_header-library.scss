@@ -1,7 +1,6 @@
-
 .library-header {
     background-color: rgba(0, 0, 0, 0.56);
-    background-image: url(../images/header-mob-1x.jpg);
+    // background-image: url(../images/header-mob-1x.jpg);
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,6 +8,11 @@
     position: relative;
     top: 0;
     left: 0;
+}
+
+.library-nav {
+    text-decoration: none;
+    color: $white-text;
 }
 
 
@@ -36,10 +40,15 @@
 }
 
 
+.buttons-block {
+    display: flex;
+    justify-content: center;
+}
+
 .library-btns {
 
     margin-right: -20px;
-//  fsd
+
     display: flex;
     justify-content: center;
 }
@@ -106,6 +115,12 @@
     }
 }
 
+
+@media screen and (min-width: 768px) {
+    .library-header {
+        background-image: url(../images/header-tab-1x.jpg);
+    }
+}
 
 
 
