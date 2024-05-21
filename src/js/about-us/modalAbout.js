@@ -1,13 +1,6 @@
 import 'swiper/swiper.scss';
 import 'swiper/modules/pagination.scss';
-import Swiper, {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  Keyboard,
-  Mousewheel,
-} from 'swiper';
-
+import Swiper, { Navigation, Pagination } from 'swiper';
 import { refs } from '../constants/refs';
 
 const aboutModal = refs.aboutModal;
@@ -45,9 +38,7 @@ function closeAboutModal() {
 }
 
 const swipers = new Swiper(swiperModal, {
-  modules: [Navigation, Pagination, Scrollbar, Keyboard, Mousewheel],
-  
-
+  modules: [Navigation, Pagination],
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
