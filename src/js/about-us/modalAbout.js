@@ -1,10 +1,6 @@
 import 'swiper/swiper.scss';
 import 'swiper/modules/pagination.scss';
 // import Swiper, {Navigation, Pagination} from 'swiper';
-import Swiper from 'swiper';
-import 'swiper/swiper-bundle.css';
-
-import { Navigation, Pagination } from 'swiper';
 import { refs } from '../constants/refs';
 
 const aboutModal = refs.aboutModal;
