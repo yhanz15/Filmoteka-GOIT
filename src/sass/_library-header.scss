@@ -4,7 +4,7 @@
     background-position: center;
     background-color: $header-bgc;
     background-image: linear-gradient($header-bgc, $header-bgc),
-        url(/src/images/mobile/library-background-mobile.jpg);
+        url(../images/header-desk-1x.jpg);
     background-size: cover;
 }
 
@@ -14,7 +14,7 @@
 (min-resolution: 2dppx) {
     .lib-header {
         background-image: linear-gradient($header-bgc, $header-bgc),
-            url(/src/images/mobile/library-background-mobile@2x.jpg);
+            url(../images/header-mob-2x.jpg);
     }
 }
 
@@ -23,7 +23,7 @@ screen and (min-resolution: 288dpi),
 screen and (min-resolution: 3dppx) {
     .lib-header {
         background-image: linear-gradient($header-bgc, $header-bgc),
-            url(/src/images/mobile/library-background-mobile@3x.jpg);
+            url(../images/header-mob-1x.jpg);
     }
 }
 
@@ -55,7 +55,7 @@ screen and (min-resolution: 3dppx) {
     (min-resolution: 2dppx) {
         .lib-header {
             background-image: linear-gradient($header-bgc, $header-bgc),
-                url(/src/images/tablet/library-background-tablet@2x.jpg);
+                url(../images/header-mob-1x.jpg);
         }
     }
 
@@ -64,7 +64,7 @@ screen and (min-resolution: 3dppx) {
     screen and (min-resolution: 3dppx) {
         .lib-header {
             background-image: linear-gradient($header-bgc, $header-bgc),
-                url(/src/images/tablet/library-background-tablet@3x.jpg);
+                url(../images/header-mob-1x.jpg);
         }
     }
 }
@@ -73,7 +73,7 @@ screen and (min-resolution: 3dppx) {
 @media screen and (min-width: 1280px) {
     .lib-header {
         background-image: linear-gradient($header-bgc, $header-bgc),
-            url(/src/images/desktop/library-background-desktop.jpg);
+            url(../images/header-desk-1x.jpg);
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -82,7 +82,7 @@ screen and (min-resolution: 3dppx) {
     (min-resolution: 2dppx) {
         .lib-header {
             background-image: linear-gradient($header-bgc, $header-bgc),
-                url(/src/images/desktop/library-background-desktop@2x.jpg);
+                url(../images/header-desk-2x.jpg);
         }
     }
 
@@ -91,7 +91,7 @@ screen and (min-resolution: 3dppx) {
     screen and (min-resolution: 3dppx) {
         .lib-header {
             background-image: linear-gradient($header-bgc, $header-bgc),
-                url(/src/images/desktop/library-background-desktop@3x.jpg);
+                url(../images/header-desk-1x.jpg);
         }
     }
 }
