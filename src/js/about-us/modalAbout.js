@@ -37,9 +37,41 @@ function closeAboutModal() {
   refs.btnToTop.style.display = 'block';
 }
 
-const swipers = new Swiper(swiperModal, {
-  modules: [Navigation, Pagination],
-  loop: true,
+// const swipers = new Swiper(swiperModal, {
+//   modules: [Navigation, Pagination],
+//   loop: true,
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//     dynamicBullets: true,
+//   },
+//   scrollbar: {
+//     el: '.swiper-scrollbar',
+//     draggable: true,
+//   },
+//   keyboard: {
+//     enabled: true,
+//     onlyInViewport: true,
+//     pageUpDown: true,
+//   },
+//   mousewheel: {
+//     invert: true,
+//     sensitivity: 1,
+//     eventsTarget: 'swiper',
+//   },
+//   centeredSlides: true,
+//   grabCursor: true,
+//   slideToClickedSlide: true,
+//   loop: true,
+//   slidesPerView: 'auto',
+//   freeMode: true,
+// });
+const swipers = new Swiper('.swiper-container', {
+  modules: [Navigation, Pagination, Scrollbar, Keyboard, Mousewheel],
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -61,7 +93,7 @@ const swipers = new Swiper(swiperModal, {
   mousewheel: {
     invert: true,
     sensitivity: 1,
-    eventsTarget: 'swiper',
+    eventsTarget: '.swiper-container',
   },
   centeredSlides: true,
   grabCursor: true,
