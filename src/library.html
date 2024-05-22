@@ -2,49 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Filmoteka</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="./sass/library.scss" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Titans - Library</title>
+  <link rel="icon" href="./images/film.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./sass/library.scss" />
+  <link rel="stylesheet" title="theme" href="./sass/dark-theme.scss" disabled />
 
+  <script type="module" src="./library.js"></script>
 </head>
 
 <body>
+  <include src="./partials/header-library.html"></include>
+  <main>
+    <div class="container">
+      <include src="./partials/theme-switcher.html"></include>
 
-    <!-- Header -->
-    <include src="./partials/header-lib.html"></include>
+      <section class="films-section">
+        <h2 class="visually-hidden">Films</h2>
+        <div class="js-not-film-card"></div>
+        <ul class="film-list js-main-film-list"></ul>
+        <div class="pagination_box"></div>
+      </section>
+    </div>
+  </main>
 
-    <main class="main">
-
-        <!-- Custom components  -->
-      
-
-        <!-- Gallery  -->
-    
-
-        <!-- Modal form  -->
-       
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-    <include src="./partials/footer.html"></include>
-    </footer>
-  
-  
-
-    <script>
-
-    </script>
-
-
+  <include src="./partials/footer.html"></include>
+  <include src="./partials/about-modal.html"></include>
+  <div class="backdrop backdrop__is-hidden js-page-loader">
+    <div class="loader is-active" id="js-page-loader">🍿</div>
+  </div>
+  <div class="backdrop__modal-card" data-backdrop></div>
+  <div class="container relative-container">
+    <include src="./partials/up-btn.html"></include>
+  </div>
 </body>
 
 </html>
