@@ -39,7 +39,7 @@ main {
   text-transform: uppercase;
   text-align: center;
 
-  background-image: url('../images/mobile/cinema-mobile.jpg');
+  background-image: url(/src/images/mobile/cinema-mobile.jpg);
   background-size: contain;
 
   @media screen and (min-width: 768px) {
@@ -49,7 +49,7 @@ main {
 
     font-size: 30px;
 
-    background-image: url('../images/tablet/cinema-tablet.jpg');
+    background-image: url(/src/images/tablet/cinema-tablet.jpg);
   }
 
   @media screen and (min-width: 1280px) {
@@ -59,7 +59,7 @@ main {
 
     font-size: 52px;
 
-    background-image: url('../images/desktop/cinema-desktop.jpg');
+    background-image: url(/src/images/desktop/cinema-desktop.jpg);
   }
 }
 
