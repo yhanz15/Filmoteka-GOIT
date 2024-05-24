@@ -2,6 +2,7 @@ export const refs = {
   mainList: document.querySelector('.js-main-film-list'),
   dataNotFoundEl: document.querySelector('.js-not-film-card'),
   headerForm: document.querySelector('.header__form'),
+  searchInput: document.querySelector('.js-input'),
   authBtn: document.querySelector('.auth-btn'),
   footerBtn: document.querySelector('.footer__btn'),
   loader: document.querySelector(`.js-page-loader`),
@@ -9,8 +10,8 @@ export const refs = {
   headerQueueBtn: document.querySelector('.js-queue'),
   paginationBox: document.querySelector('.pagination_box'),
   errorMessage: document.getElementById('header__error-message'),
-  trendingSection: document.querySelector(".swiper-section"),
-  btnToTop: document.getElementById("up-btn"),
+  trendingSection: document.querySelector('.swiper-section'),
+  btnToTop: document.getElementById('up-btn'),
   aboutModal: document.querySelector('.js-about-modal'),
   body: document.querySelector('body'),
   btnOpenAboutModal: document.querySelector('.js-open-modal'),
@@ -24,5 +25,5 @@ export const refs = {
   changeThemeCssLink: document.querySelector(`[title= "theme"]`),
   swiperWrapper: document.querySelector('.swiper-wrapper'),
   swiperRef: document.querySelector('#trends-swiper'),
-  autorizationChecked: document.getElementById('icon-autorization-checked')
+  autorizationChecked: document.getElementById('icon-autorization-checked'),
 };
