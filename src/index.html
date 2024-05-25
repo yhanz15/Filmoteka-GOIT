@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,10 +17,9 @@
       href="./sass/dark-theme.scss"
       disabled
     />
-    
   </head>
   <body>
-      <include src="./partials/header-main.html"></include>
+    <include src="./partials/header-main.html"></include>
     <main>
       <!-- ❗️❗️❗️ Add partials like so for every page -->
       <div class="container">
@@ -40,12 +39,11 @@
       <div class="backdrop__modal-card" data-backdrop></div>
       <div class="backdrop backdrop__is-hidden js-page-loader">
         <div class="loader is-active" id="js-page-loader">🍿</div>
-      </div><div class="container relative-container">
-    <include src="./partials/up-btn.html"></include>
-  </div>
+      </div>
+      <div class="container relative-container">
+        <include src="./partials/up-btn.html"></include>
+      </div>
     </footer>
     <script type="module" src="./index.js"></script>
-
-
   </body>
 </html>
