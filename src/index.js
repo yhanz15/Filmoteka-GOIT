@@ -1,5 +1,5 @@
 // import './js/about-us/modalAbout';
-import { onSearchFormSubmit } from './js/constants/moviedb';
+import { onFormSubmit } from './js/get-movies/movieSearch';
 import { refs } from './js/constants/refs';
 
-refs.headerForm.addEventListener('submit', onSearchFormSubmit);
+refs.headerForm.addEventListener('submit', onFormSubmit);
