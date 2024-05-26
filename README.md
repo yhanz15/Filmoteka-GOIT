@@ -24,7 +24,7 @@
    
 <span align="center">
 
-<img src="./src/images/team/yhanz.jpg" alt="Yhanz" width="150px" height="150px">
+<h3><img src="./src/images/team/yhanz.jpg" alt="Yhanz" width="150px" height="150px"></h3>
 <a align="center" href="https://github.com/yhanz15">![GitHub](https://img.shields.io/badge/-Yhanz-05122A?style=flat&logo=github)</a>
 <a align="center" href="https://github.com/aprilespiritu">![GitHub](https://img.shields.io/badge/-April-05122A?style=flat&logo=github)</a>
 <a align="center" href="https://github.com/JuliusB-ui">![GitHub](https://img.shields.io/badge/-Julius-05122A?style=flat&logo=github)</a>
