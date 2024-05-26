@@ -25,7 +25,6 @@
 <span align="center">
 
 <a align="center" href="https://github.com/yhanz15">![GitHub](https://img.shields.io/badge/-Yhanz-05122A?style=flat&logo=github)</a>
-
 <a align="center" href="https://github.com/aprilespiritu">![GitHub](https://img.shields.io/badge/-April-05122A?style=flat&logo=github)</a>
 <a align="center" href="https://github.com/JuliusB-ui">![GitHub](https://img.shields.io/badge/-Julius-05122A?style=flat&logo=github)</a>
 <a align="center" href="https://github.com/king-dato">![GitHub](https://img.shields.io/badge/-Martin-05122A?style=flat&logo=github)</a>
