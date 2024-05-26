@@ -60,8 +60,8 @@ QUEUE;
 
 🎞 Pagination allows you to easily navigate between movies;
 
-🎞 I LIBRARY you can see your database of movies divided by 2 categories:
+🎞 In LIBRARY, you can see your database of movies divided by 2 categories:
 WATCHED and QUEUE.
 
-🎞 In the footer section, if you click GoIT Tech Titans it will goes to modal where the members of the team located.
+🎞 In the footer section, if you click GoIT Tech Titans it will goes to modal where the members of the team will appear.
 
