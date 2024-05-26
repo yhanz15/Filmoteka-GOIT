@@ -58,10 +58,12 @@ project is written at the end of the study of JavaScript.
 🎞 Manage your film database by adding or deleting chosen movie to WATCHED or to
 QUEUE;
 
+🎞 Inside the modal of film database you can play the trailer of the movie using the Youtube channel;
+
 🎞 Pagination allows you to easily navigate between movies;
 
 🎞 In LIBRARY, you can see your database of movies divided by 2 categories:
-WATCHED and QUEUE.
+WATCHED and QUEUE.;
 
 🎞 In the footer section, if you click GoIT Tech Titans it will goes to modal where the members of the team will appear.
 
