@@ -1,44 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmoteka by Tech Titans</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/basiclightbox/dist/basicLightbox.min.css"
+    />
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
+    <!-- <script type="module" src="./index.js"></script> -->
+  </head>
+  <body>
+    <main class="main">
+      <!-- Header -->
+      <include src="./partials/_header-lib.html"></include>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tech Titans - Library</title>
-  <link rel="icon" href="./images/film.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./sass/library.scss" />
-  <link rel="stylesheet" title="theme" href="./sass/dark-theme.scss" disabled />
+      <!-- Gallery  -->
+      <include src="./partials/gallery-lib.html"></include>
 
-  <script type="module" src="./library.js"></script>
-</head>
+      <!-- Modal form  -->
+      <include src="./partials/modal-film.html"></include>
+    </main>
 
-<body>
-  <include src="./partials/header-lib.html"></include>
-  <main>
-    <div class="container">
-      <include src="./partials/theme-switcher.html"></include>
+    <!-- Footer -->
+    <include src="./partials/footer.html"></include>
 
-      <section class="films-section">
-        <h2 class="visually-hidden">Films</h2>
-        <div class="js-not-film-card"></div>
-        <ul class="film-list js-main-film-list"></ul>
-        <div class="pagination_box"></div>
-      </section>
-    </div>
-  </main>
-
-  <include src="./partials/footer.html"></include>
-  <include src="./partials/about-modal.html"></include>
-  <div class="backdrop backdrop__is-hidden js-page-loader">
-    <div class="loader is-active" id="js-page-loader">🍿</div>
-  </div>
-  <div class="backdrop__modal-card" data-backdrop></div>
-  <div class="container relative-container">
-    <include src="./partials/up-btn.html"></include>
-  </div>
-</body>
-
+    <script type="module" src="./library.js"></script>
+  </body>
 </html>

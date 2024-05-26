@@ -1,8 +1,16 @@
-@import './common';
-@import './footer';
-@import './about-modal';
-@import './variables';
-@import './slider-trends';
-@import './header-main';
-@import './pagination';
-@import './up-btn';
+@import './base/normalize';
+@import './base/fonts';
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './base/body';
+
+@import './components/header-main';
+@import './components/header-lib';
+@import './components/gallery';
+@import './components/gallery-card';
+@import './components/footer';
+@import './components/modal-film';
+@import './components/pagination';
+@import './components/loader';
+@import './components/team';
