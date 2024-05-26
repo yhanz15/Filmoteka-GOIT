@@ -53,13 +53,15 @@ project is written at the end of the study of JavaScript.
 
 **The Web App provides the following functions:**
 
-🎞 search movie by a key word;
+🎞 Search movie by a key word;
 
-🎞 manage your film database by adding or deleting chosen movie to WATCHED or to
+🎞 Manage your film database by adding or deleting chosen movie to WATCHED or to
 QUEUE;
 
-🎞 pagination allows you to easily navigate between movies;
+🎞 Pagination allows you to easily navigate between movies;
 
-🎞 in LIBRARY you can see your database of movies divided by 2 categories:
+🎞 I LIBRARY you can see your database of movies divided by 2 categories:
 WATCHED and QUEUE.
+
+🎞 In the footer section, if you click GoIT Tech Titans it will goes to modal where the members of the team located.
 
