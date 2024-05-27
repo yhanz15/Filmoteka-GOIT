@@ -7,64 +7,35 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.56);
+  background-blend-mode: overlay;
 
-  @media screen and (max-width: 320px)
-  {background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.56),
-      rgba(0, 0, 0, 0.56)
-    ),
-    url(../images/header-lib/header-lib-bg-img@1x_s.jpg);
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.56),
-        rgba(0, 0, 0, 0.56)
-      ),
-      url(../images/header-lib/header-lib-bg-img@2x_s.jpg);
+  @media screen {
+    background-image: url(../images/header-lib/header-lib-bg-img@1x_s.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/header-lib/header-lib-bg-img@2x_s.jpg);
+    }
   }
-}
-  @media screen and (min-width: 321px) and (max-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-top: 40px;
     padding-bottom: 60px;
 
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.56),
-        rgba(0, 0, 0, 0.56)
-      ),
-      url(../images/header-lib/header-lib-bg-img@1x_m.jpg);
+    background-image: url(../images/header-lib/header-lib-bg-img@1x_m.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.56),
-          rgba(0, 0, 0, 0.56)
-        ),
-        url(../images/header-lib/header-lib-bg-img@2x_m.jpg);
+      background-image: url(../images/header-lib/header-lib-bg-img@2x_m.jpg);
     }
   }
 
-  @media screen and (min-width: 769px) {
-    background-image: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 0.56),
-        rgba(0, 0, 0, 0.56)
-      ),
-      url(../images/header-lib/header-lib-bg-img@1x_l.jpg);
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/header-lib/header-lib-bg-img@1x_l.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          to right,
-          rgba(0, 0, 0, 0.56),
-          rgba(0, 0, 0, 0.56)
-        ),
-        url(../images/header-lib/header-lib-bg-img@2x_l.jpg);
+      background-image: url(../images/header-lib/header-lib-bg-img@2x_l.jpg);
     }
   }
 }
@@ -139,12 +110,12 @@
 .header-nav__link {
   display: block;
 
-  transition: transform $duration ease, box-shadow $duration ease;
+  transition: transform $duration ease, text-shadow $duration ease;
 
   &:hover,
   &:focus {
     transform: scale(1.15);
-    box-shadow: inset 5px -15px 30px -10px #a7151a;
+    text-shadow: 0 0 3px white;
   }
 }
 
