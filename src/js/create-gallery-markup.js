@@ -13,7 +13,7 @@ export function createGalleryMarkUp(movies) {
         : noposter;
 
       return `
-            <li class="movie__card" data-movie="{movie.id}">
+            <li class="movie__card" data-movie="${movie.id}">
                 <div class="movie__thumb">
                     <img class="movie__image"
                     src="${poster}"
