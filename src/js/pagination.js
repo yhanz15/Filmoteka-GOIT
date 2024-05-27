@@ -1,7 +1,7 @@
 import Pagination from 'tui-pagination';
 import 'tui-pagination/dist/tui-pagination.css';
 import refs from './refs';
-import { getByKeyword, getTrending } from './api';
+// import { getByKeyword, getTrending } from './api';
 const TUI_VISIBLE_PAGES = 5;
 
 export function createPagination(totalItems, visiblePages) {
