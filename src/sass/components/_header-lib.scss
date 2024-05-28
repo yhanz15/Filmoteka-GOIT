@@ -19,11 +19,11 @@
     }
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    padding-top: 40px;
-    padding-bottom: 60px;
+    padding-top: 45px;
+    height: 216px;
 
     background-image: url('/src/images/header-main/header-tab-1x.jpg');
-    
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -32,8 +32,6 @@
   }
 
   @media screen and (min-width: 1280px) {
-
-    
     background-image: url('/src/images/header-main/header-desk-1x.jpg');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),

@@ -3,7 +3,7 @@ import { getByKeyword } from './api';
 import { createGalleryMarkUp } from './create-gallery-markup';
 import { createPagination } from './pagination';
 import { scrollOnTop } from './scroll-on-top';
-// import { showHideLoader } from './loader';
+import { showHideLoader } from './loader';
 
 refs.form.addEventListener('submit', onSearchByKeyword);
 let query;
@@ -23,17 +23,17 @@ function onSearchByKeyword(e) {
     return;
   }
 
-  //   showHideLoader(refs.loader);
-  //   refs.gallery.innerHTML = '';
-  //   if (page === 1) {
-  //     refs.pagination.style.display = 'none';
-  //   } else {
-  //     refs.pagination.style.display = 'block';
-  //   }
+  showHideLoader(refs.loader);
+  refs.gallery.innerHTML = '';
+  if (page === 1) {
+    refs.pagination.style.display = 'none';
+  } else {
+    refs.pagination.style.display = 'block';
+  }
 
   getByKeyword(query, page)
     .then(data => {
-      //   showHideLoader(refs.loader);
+      showHideLoader(refs.loader);
       if (!data.total_results) {
         setTimeout(() => {
           refs.formWarning.classList.add('is-hidden');
@@ -48,10 +48,10 @@ function onSearchByKeyword(e) {
       const pagination = createPagination(data.total_results, data.total_pages);
 
       pagination.on('beforeMove', ({ page }) => {
-        // showHideLoader(refs.loader);
+        showHideLoader(refs.loader);
         refs.gallery.innerHTML = '';
         getByKeyword(query, page).then(data => {
-          //   showHideLoader(refs.loader);
+          showHideLoader(refs.loader);
           refs.gallery.innerHTML = createGalleryMarkUp(data.results);
           scrollOnTop();
         });
